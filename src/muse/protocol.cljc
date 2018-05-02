@@ -209,8 +209,8 @@
     (value [])))
 
 (defn traverse
-  [f muses]
-  (flat-map #(collect (map f %)) muses))
+  [f muse]
+  (flat-map #(collect (map f %)) muse))
 
 (defn next-level
   [ast-node]
